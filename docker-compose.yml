@@ -20,6 +20,6 @@ nginx:
 db:
   image: mongo:3.2.1
   volumes:
-    - /mnt/sda1/var/lib/mongo-data:/data/db
+    - ./mongo-data:/data/db
   ports:
     - "27017:27017"
